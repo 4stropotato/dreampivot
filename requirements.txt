@@ -1,0 +1,28 @@
+# DREAMPIVOT Phase 1 Dependencies
+
+# Exchange connectivity
+ccxt>=4.0.0              # Unified crypto exchange API (Binance, Bybit, etc.)
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Database
+sqlalchemy>=2.0.0        # ORM for SQLite/PostgreSQL
+
+# Scheduling
+apscheduler>=3.10.0      # Job scheduling
+
+# Logging
+loguru>=0.7.0            # Better logging
+
+# Configuration
+pyyaml>=6.0              # YAML config files
+python-dotenv>=1.0.0     # Environment variables
+
+# HTTP
+httpx>=0.25.0            # Async HTTP client
+websockets>=12.0         # WebSocket support
+
+# Utilities
+python-dateutil>=2.8.0   # Date parsing

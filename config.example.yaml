@@ -1,0 +1,47 @@
+# DREAMPIVOT Configuration
+# Copy to config.yaml and customize
+
+# Trading mode: paper (simulated) or live (real money)
+mode: paper
+
+# Risk level (1-10)
+# 1 = Ultra safe (1% position, high confidence required)
+# 5 = Balanced (5% position, medium confidence)
+# 10 = Aggressive (10% position, low confidence OK)
+risk_level: 1
+
+# Exchange settings
+exchange:
+  name: binance  # binance, bybit, bitflyer, kraken, etc.
+  testnet: true  # Use testnet for safety
+
+# Trading pairs
+symbols:
+  - BTC/USDT
+  # - ETH/USDT
+  # - SOL/USDT
+
+# Candle timeframe
+timeframe: 1h  # 1m, 5m, 15m, 1h, 4h, 1d
+
+# Days of history to analyze
+history_days: 30
+
+# Strategy settings
+strategy:
+  name: momentum
+  params:
+    fast_period: 12
+    slow_period: 26
+    signal_period: 9
+    rsi_period: 14
+    rsi_overbought: 70
+    rsi_oversold: 30
+
+# Paper trading settings
+paper:
+  initial_balance: 10000.0  # Starting USDT
+  fee_rate: 0.001  # 0.1% fee
+
+# Logging
+log_level: INFO  # DEBUG, INFO, WARNING, ERROR
